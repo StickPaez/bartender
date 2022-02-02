@@ -112,7 +112,7 @@ public class BartenderServiceImpl implements BartenderService{
      */
     public void printArray(ArrayList<Integer> array){
         for (Integer x: array) {
-            System.out.print("/n" + "|" + x );
+            System.out.print("\n" + "|" + x );
         }
     }
 }

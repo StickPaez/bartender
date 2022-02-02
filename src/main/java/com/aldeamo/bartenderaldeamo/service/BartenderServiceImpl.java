@@ -75,10 +75,10 @@ public class BartenderServiceImpl implements BartenderService{
      * @param idDataBase
      */
     public void findDatabase(int idDataBase){
-        Arrays rep = dbRepository.findArraysById(idDataBase);
-        String strArray[] = rep.getInput_array().split(",");
+        //Arrays rep = dbRepository.findArraysById(idDataBase);
+        //String strArray[] = rep.getInput_array().split(",");
 
-        //String strArray[] = {"2", "3", "4", "5", "6", "7"};
+        String strArray[] = {"2", "3", "4", "5", "6", "7"};
 
         for (String x : strArray) {
             a.add(Integer.parseInt(x));
@@ -92,8 +92,12 @@ public class BartenderServiceImpl implements BartenderService{
      * @param numIteration
      */
     public void writeIterationLog(int iterations, int idDataBase, int numIteration){
-        System.out.println("Num de iteraciones: " + iterations);
-        System.out.println("Id de base de datos: " + idDataBase);
+        if(numIteration == 0){
+            System.out.println("Num de iteraciones: " + iterations);
+            System.out.println("Id de base de datos: " + idDataBase);
+            System.out.println("===================== " + idDataBase);
+        }
+
         System.out.println("Iteración número: " + (numIteration+1));
 
         System.out.print("\nArreglo a: ");

@@ -96,13 +96,13 @@ public class BartenderServiceImpl implements BartenderService{
         System.out.println("Id de base de datos: " + idDataBase);
         System.out.println("Iteración número: " + (numIteration+1));
 
-        System.out.print("Arreglo a: ");
+        System.out.print("\nArreglo a: ");
         printArray(a);
 
-        System.out.print("Arreglo b: ");
+        System.out.print("\nArreglo b: ");
         printArray(b);
 
-        System.out.print("Arreglo respuesta: ");
+        System.out.print("\nArreglo respuesta: ");
         printArray(answerArray);
     }
 
@@ -112,7 +112,7 @@ public class BartenderServiceImpl implements BartenderService{
      */
     public void printArray(ArrayList<Integer> array){
         for (Integer x: array) {
-            System.out.print("\n" + "|" + x );
+            System.out.print("|" + x );
         }
     }
 }

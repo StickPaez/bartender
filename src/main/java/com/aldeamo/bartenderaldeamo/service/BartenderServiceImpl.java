@@ -95,10 +95,9 @@ public class BartenderServiceImpl implements BartenderService{
         if(numIteration == 0){
             System.out.println("Num de iteraciones: " + iterations);
             System.out.println("Id de base de datos: " + idDataBase);
-            System.out.println("===================== " + idDataBase);
         }
-
-        System.out.println("Iteración número: " + (numIteration+1));
+        System.out.println("===================== =");
+        System.out.println("\nIteración número: " + (numIteration+1));
 
         System.out.print("\nArreglo a: ");
         printArray(a);

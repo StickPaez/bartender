@@ -1,5 +1,7 @@
 package com.aldeamo.bartenderaldeamo.service;
 
-public interface BartenderService {
+import org.springframework.http.ResponseEntity;
 
+public interface BartenderService {
+    ResponseEntity getBartenderLogic(int iterations, int idDataBase);
 }

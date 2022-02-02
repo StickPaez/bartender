@@ -37,7 +37,7 @@ public class BartenderServiceImpl implements BartenderService{
                     .body("Error en el servidor : " + e.getMessage());
         }
         return ResponseEntity.status(HttpStatus.OK)
-                .body("Array Respuesta --> " + answerArray);
+                .body("Array Respuesta exitoso --> " + answerArray);
     }
 
     /**

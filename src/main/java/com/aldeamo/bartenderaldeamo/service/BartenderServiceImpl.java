@@ -23,8 +23,8 @@ public class BartenderServiceImpl implements BartenderService{
     /**
      *
      * @param iterations Número de iteraciones de entrada
-     * @param idDataBase Id unico de entrada
-     * @return Devuelve objeto de respuesta del servicio. En caso de error devuelve el codigo y mensaje del error
+     * @param idDataBase Id único de entrada
+     * @return Retorna el objeto de respuesta del servicio. En caso de error devuelve el codigo y mensaje del error
      */
     @Override
     public ResponseEntity getBartenderLogic(int iterations, int idDataBase) {
@@ -47,7 +47,7 @@ public class BartenderServiceImpl implements BartenderService{
 
     /**
      * Name: separateGlasses
-     * Description: Divide los valores del arreglo de  (Arreglo a) segùn las condiciones de separación.
+     * Description: Divide los valores del arreglo de  (Arreglo A) segùn las condiciones de separación.
      * @param iterations Número de iteraciones deseadas
      * @param idDataBase Id único de entrada. Se envia al método que escribe el log
      */
@@ -78,7 +78,7 @@ public class BartenderServiceImpl implements BartenderService{
 
     /**
      * Name: flipArray
-     * Description: Revierte el arreglo a
+     * Description: Revierte el arreglo de entrada (arreglo A)
      */
     public void flipArray() throws Exception{
         try {
@@ -91,7 +91,7 @@ public class BartenderServiceImpl implements BartenderService{
     /**
      * Name: findDatabase
      * Description: Consulta información en base de datos
-     * @param idDataBase Id unico que trae la información del arreglo desde la base de datos
+     * @param idDataBase Id único que trae la información del arreglo desde la base de datos
      */
     public void findDatabase(int idDataBase) throws Exception {
         try{
@@ -116,7 +116,7 @@ public class BartenderServiceImpl implements BartenderService{
     public void writeIterationLog(int iterations, int idDataBase, int numIteration) throws Exception {
         try{
             if(numIteration == 0) {
-                System.out.println("Num de iteraciones: " + iterations);
+                System.out.println("Núm de iteraciones: " + iterations);
                 System.out.println("Id de base de datos: " + idDataBase);
             }
 

@@ -1,5 +1,6 @@
 package com.aldeamo.bartenderaldeamo.service;
 
+import com.aldeamo.bartenderaldeamo.modelData.Arrays;
 import com.aldeamo.bartenderaldeamo.repository.DbRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -62,6 +63,7 @@ public class BartenderServiceImpl implements BartenderService{
                 }
 
                 answerArray.addAll(b);
+
                 a = new ArrayList<>(a1);
                 writeIterationLog(iterations, idDataBase, i);
                 a1.clear();
@@ -93,10 +95,8 @@ public class BartenderServiceImpl implements BartenderService{
      */
     public void findDatabase(int idDataBase) throws Exception {
         try{
-            //Arrays rep = dbRepository.findArraysById(idDataBase);
-            //String strArray[] = rep.getInput_array().split(",");
-
-            String strArray[] = {"2", "3", "4", "5", "6", "7"};
+            Arrays rep = dbRepository.findArraysById(idDataBase);
+            String strArray[] = rep.getInput_array().split(",");
 
             for (String x : strArray) {
                 a.add(Integer.parseInt(x));

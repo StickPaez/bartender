@@ -115,7 +115,7 @@ public class BartenderServiceImpl implements BartenderService{
      */
     public void writeIterationLog(int iterations, int idDataBase, int numIteration) throws Exception {
         try{
-            if(numIteration == 0){
+            if(numIteration == 0) {
                 System.out.println("Num de iteraciones: " + iterations);
                 System.out.println("Id de base de datos: " + idDataBase);
             }

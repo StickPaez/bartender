@@ -52,8 +52,8 @@ public class BartenderServiceImpl implements BartenderService{
      */
     private void separateGlasses(int iterations, int idDataBase) throws Exception {
         try {
-            flipArray();
             for (int i = 0; i < iterations; i++) {
+                flipArray();
                 for (int j = 0; j < a.size(); j++) {
                     if (a.get(j) % primeNumbers[i] == 0)
                         b.add(a.get(j));

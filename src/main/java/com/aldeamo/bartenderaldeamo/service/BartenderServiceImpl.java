@@ -73,7 +73,6 @@ public class BartenderServiceImpl implements BartenderService{
         }catch (Exception e){
             throw new Exception("Falla al separar arreglos");
         }
-
     }
 
     /**
@@ -134,7 +133,6 @@ public class BartenderServiceImpl implements BartenderService{
         }catch (Exception e){
             throw new Exception("Falla al escribír log");
         }
-
     }
 
     /**

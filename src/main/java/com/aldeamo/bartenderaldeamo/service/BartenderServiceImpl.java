@@ -34,7 +34,6 @@ public class BartenderServiceImpl implements BartenderService{
                         .body("Parámetros inválidos en la petición");
             } else {
                 findDatabase(idDataBase);
-                flipArray();
                 separateGlasses(iterations,idDataBase);
             }
         }catch (Exception e){
@@ -53,6 +52,7 @@ public class BartenderServiceImpl implements BartenderService{
      */
     private void separateGlasses(int iterations, int idDataBase) throws Exception {
         try {
+            flipArray();
             for (int i = 0; i < iterations; i++) {
                 for (int j = 0; j < a.size(); j++) {
                     if (a.get(j) % primeNumbers[i] == 0)

@@ -16,8 +16,8 @@ public class BarTenderController {
      * @param idDataBase = id de entrada a consultar en DB
      * @return retorna
      */
-    @GetMapping(value="/getBartender")
-    public ResponseEntity<Object> getgetBartender(@RequestParam int iterations, @RequestParam int idDataBase){;
+    @GetMapping(value="/getBartender", produces = "application/json")
+    public ResponseEntity<Object> getBartender(@RequestParam int iterations, @RequestParam int idDataBase){;
        return bartenderService.getBartenderLogic(iterations, idDataBase);
     }
 }
